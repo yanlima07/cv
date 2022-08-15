@@ -1,0 +1,78 @@
+.Homepage {
+  display: block;
+  position: relative;
+  height: 100vh;
+
+  overflow: visible;
+}
+
+.Homepage .image-box {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Homepage img {
+  height: 85.5vh; /* MUDAR */
+  width: 50vh;
+}
+
+.Homepage .texts {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  right: 10vh;
+  bottom: 10vh;
+  z-index: 2;
+}
+
+.Homepage h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.3vh;
+  line-height: 10.16vh;
+
+  letter-spacing: 9.5vh;
+
+  color: var(--black-text);
+}
+
+.Homepage h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5.5vh;
+  line-height: 8.25vh;
+
+  color: var(--black-text);
+}
+
+@media (orientation: portrait) {
+  .Homepage img {
+    transform: translate(-55%, 5%);
+  }
+
+  .Homepage .texts {
+    right: 2vh;
+    bottom: 2vh;
+    justify-content: center;
+  }
+
+  .Homepage h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 8.5vh;
+    line-height: 9vh;
+    letter-spacing: 0vh;
+  }
+
+  .Homepage h2 {
+    font-size: 4vh;
+    line-height: 3vh;
+    letter-spacing: 1vh;
+    transform: translate(0%, 0%);
+  }
+}

@@ -1,0 +1,348 @@
+.Stacks {
+  position: relative;
+  height: 200vh;
+  width: 100vw;
+
+  overflow: visible;
+}
+
+.Stacks .title {
+  position: absolute;
+
+  top: 8.5vh;
+  left: 15vh;
+
+  z-index: 1;
+}
+
+.Stacks h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vh;
+  line-height: 8vh;
+
+  color: var(--black-text);
+}
+
+.Stacks .Development {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  height: 100vh;
+  width: 100vw;
+
+  justify-content: end;
+  align-items: center;
+
+  padding-bottom: 17vh;
+
+  scroll-snap-align: start;
+
+  transition: all 0.25s ease;
+}
+
+.Stacks .blocks {
+  display: flex;
+  flex-direction: row;
+
+  height: 37vh;
+}
+
+.Stacks h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9vh;
+  line-height: 9vh;
+
+  text-align: justify;
+
+  color: var(--square-content);
+
+  cursor: default;
+  transition: all 0.25s ease;
+}
+
+.Stacks .square {
+  display: flex;
+
+  width: 25vh;
+  height: 25vh;
+
+  margin: 10vh 1vh 1vh 1vh;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--grey-stuff);
+
+  transition: all 0.25s ease;
+
+  z-index: 2;
+}
+
+#blockC:hover {
+  background-color: #3949aa;
+  transform: translate(0%, -30%);
+}
+
+#blockC:hover h2 {
+  color: var(--square-hover) !important;
+  transform: scale(120%);
+}
+
+.Stacks .JAVAicon {
+  height: 9vh;
+  fill: var(--square-content);
+  transition: all 0.25s ease;
+}
+
+#blockJAVA:hover {
+  background-color: #eb8f1a;
+  transform: translate(0%, -30%);
+}
+
+#blockJAVA:hover .JAVAicon {
+  fill: var(--square-hover) !important;
+  transform: scale(130%);
+}
+
+#blockJS:hover {
+  background-color: #ead41c;
+  transform: translate(0%, -30%);
+}
+
+#blockJS:hover h2 {
+  color: var(--square-hover) !important;
+  transform: scale(110%);
+}
+
+.Stacks .HTMLicon {
+  height: 8vh;
+  fill: var(--square-content);
+  transition: all 0.25s ease;
+}
+
+#blockHTML:hover {
+  background-color: #e56027;
+  transform: translate(0%, -30%);
+}
+
+#blockHTML:hover .HTMLicon {
+  fill: var(--square-hover) !important;
+  transform: scale(120%);
+}
+
+.Stacks .CSSicon {
+  height: 9.5vh;
+  fill: var(--square-content);
+  transition: all 0.25s ease;
+}
+
+#blockCSS:hover {
+  background-color: #2760e5;
+  transform: translate(0%, -30%);
+}
+
+#blockCSS:hover .CSSicon {
+  fill: var(--square-hover) !important;
+  transform: scale(120%);
+}
+
+.Stacks .MYSQLicon {
+  height: 11vh;
+  fill: var(--square-content);
+  transition: all 0.25s ease;
+}
+
+#blockMYSQL:hover {
+  background-color: #f29111;
+  transform: translate(0%, -30%);
+}
+
+#blockMYSQL:hover .MYSQLicon {
+  fill: var(--square-hover) !important;
+  transform: scale(120%);
+}
+
+.Stacks .texts {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+
+  transform: translate(0%, -90%);
+}
+
+.Stacks h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vh;
+  line-height: 3vh;
+  text-align: center;
+
+  width: 25vh;
+
+  margin: 0px 1vh 1vh 1vh;
+
+  color: var(--black-text);
+
+  z-index: 1;
+
+  cursor: default;
+}
+
+.Stacks .arrow {
+  position: absolute;
+  transform: rotate(90deg);
+  height: 5vh;
+  top: 90vh;
+  mix-blend-mode: difference;
+}
+
+/* STACK CREATION */
+
+.Stacks .Creation {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-content: center;
+
+  scroll-snap-align: start;
+}
+
+.Stacks .blobs {
+  display: flex;
+
+  height: 90vh;
+  width: 85vw;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Stacks .blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+}
+
+.Stacks .AEspace {
+  top: 0px;
+  transform: translate(0%, 20%);
+}
+
+#AE {
+  height: 12vh;
+  width: 12vh;
+  z-index: 2;
+  filter: grayscale(100%) contrast(100%) brightness(150%);
+  transition: 0.5s;
+}
+
+#blobSvgAE path {
+  fill: var(--grey-stuff) !important;
+  transition: 0.5s;
+}
+
+#AEbox:hover #blobSvgAE path {
+  fill: #9999ff !important;
+}
+
+#AEbox:hover #AE {
+  filter: none !important;
+}
+
+.Stacks .blobAE {
+  position: absolute;
+  width: 90%;
+}
+
+.Stacks .blobAE:nth-child(2) {
+  opacity: 0; /* GLOW */
+  filter: blur(40px);
+}
+
+.Stacks .PSspace {
+  transform: translate(0%, -10%);
+}
+
+#PS {
+  height: 12vh;
+  width: 12vh;
+  z-index: 2;
+  filter: grayscale(100%) contrast(100%) brightness(150%);
+  transition: 0.5s;
+}
+
+#blobSvgPS path {
+  fill: var(--grey-stuff) !important;
+  transition: 0.5s;
+}
+
+#PSbox:hover #blobSvgPS path {
+  fill: #31a8ff !important;
+}
+
+#PSbox:hover #PS {
+  filter: none !important;
+}
+
+.Stacks .PS:hover {
+  height: 100px;
+  z-index: 2;
+}
+
+.Stacks .blobPS {
+  position: absolute;
+  width: 90%;
+}
+
+.Stacks .blobPS:nth-child(2) {
+  opacity: 0; /* GLOW */
+  filter: blur(40px);
+}
+
+.Stacks .PRspace {
+  transform: translate(0%, 15%);
+}
+
+#PR {
+  height: 12vh;
+  width: 12vh;
+  z-index: 2;
+  filter: grayscale(100%) contrast(100%) brightness(150%);
+  transition: 0.5s;
+}
+
+#blobSvgPR path {
+  fill: var(--grey-stuff) !important;
+  transition: 0.5s;
+}
+
+#PRbox:hover #blobSvgPR path {
+  fill: #9999ff !important;
+}
+
+#PRbox:hover #PR {
+  filter: none !important;
+}
+
+.Stacks .blobPR {
+  position: absolute;
+  width: 90%;
+}
+
+.Stacks .blobPR:nth-child(2) {
+  opacity: 0; /* GLOW */
+  filter: blur(40px);
+}

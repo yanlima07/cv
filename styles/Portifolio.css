@@ -1,0 +1,108 @@
+.Portifolio {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  overflow: visible;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.Portifolio .title {
+  position: absolute;
+
+  top: 8.5vh;
+  left: 15vh;
+
+  z-index: 1;
+}
+
+.Portifolio h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vh;
+  line-height: 8vh;
+
+  color: var(--black-text);
+}
+
+.Portifolio .content {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+
+  /* 
+  height: 75%;
+  width: 80%;
+  top: 20%; */
+
+  height: 65%;
+
+  top: 7%;
+
+  aspect-ratio: 1306/515;
+
+  justify-content: space-between;
+
+  transition: all 0.5s ease;
+}
+.Portifolio .box1 {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  justify-content: space-between;
+}
+
+.Portifolio .line {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.Portifolio .picture {
+  height: 20vh;
+  width: 20vh;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.Portifolio .picture:hover {
+  filter: grayscale(0%);
+}
+
+.Portifolio .box2 {
+  display: flex;
+  flex-direction: column;
+  height: 101%;
+  justify-content: space-between;
+}
+
+.Portifolio .digital {
+  height: 31vh;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.Portifolio .digital:hover {
+  filter: grayscale(0%);
+}
+
+.Portifolio .box3 {
+  display: flex;
+  flex-direction: column;
+  height: 101%;
+  justify-content: space-between;
+}
+.Portifolio .print {
+  height: 31vh;
+  filter: grayscale(100%);
+  transition: all 0.5s;
+}
+
+.Portifolio .print:hover {
+  filter: grayscale(0%);
+}

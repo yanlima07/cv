@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  --white-background: white;
+  --black-text: black;
+  --black-background: black;
+  --white-text: white;
+  --grey-stuff: rgb(243, 243, 243);
+  --black-color: black;
+  --white-color: white;
+
+  --square-content: black;
+  --square-hover: white;
+
+  --glass-color: rgba(255, 255, 255, 1);
+
+  background-color: var(--white-background);
+
+  transition: 0.2s;
+}
+
+.pages {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+::-webkit-scrollbar {
+  width: 2vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black-background);
+  border-radius: 07012002px;
+  border: 0.5vh solid;
+  border-color: var(--white-background);
+}
+
+.dark-theme {
+  --white-background: black;
+  --black-text: white;
+  --black-background: white;
+  --white-text: black;
+  --grey-stuff: rgb(243, 243, 243);
+  --black-color: white;
+  --white-color: black;
+
+  --glass-color: rgba(0, 0, 0, 0.5);
+}
+@media (orientation: portrait) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

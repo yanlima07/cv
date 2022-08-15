@@ -1,0 +1,86 @@
+.Experiences {
+  position: relative;
+  height: 300vh;
+  width: 100vw;
+
+  overflow: visible;
+}
+
+.Experiences .title {
+  position: absolute;
+
+  top: 8.5vh;
+  left: 15vh;
+
+  z-index: 1;
+}
+
+.Experiences h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5vh;
+  line-height: 8vh;
+
+  color: var(--black-text);
+}
+
+.Experiences .Job {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  align-items: center;
+  justify-content: center;
+
+  scroll-snap-align: start;
+}
+
+.Experiences .Job h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28vh;
+  line-height: 25vh;
+
+  color: var(--black-text);
+  background-attachment: fixed;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Experiences .IC h2 {
+  background-image: url(../img/code.webp);
+}
+
+.Experiences .Unect h2 {
+  background-image: url(../img/icez.webp);
+}
+
+.Experiences .KG h2 {
+  background-image: url(../img/desert.webp);
+}
+
+.Experiences p {
+  margin-top: 10vh;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5vh;
+  line-height: 3.25vh;
+
+  text-align: center;
+
+  color: var(--black-text);
+}
+
+.Experiences .arrow {
+  position: absolute;
+  transform: rotate(90deg);
+  height: 5vh;
+  margin-top: 80vh;
+  mix-blend-mode: difference;
+}
