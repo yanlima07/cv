@@ -2,16 +2,13 @@
   display: flex;
   flex-direction: row-reverse;
   position: fixed;
-
   padding: 1vh;
-
   top: 10vh;
   right: 8vw;
-
   align-items: center;
-
   z-index: 7012002;
   mix-blend-mode: difference;
+  overflow: visible;
 }
 
 .navbar #toggle {
@@ -29,9 +26,10 @@
   height: 3vh;
   width: 3vh;
   transition: all 0.5s ease;
+  fill: var(--nav-landscape);
 }
 
-.navbar .menu {
+.navbar .menuList {
   opacity: 0;
   transform: translate(100%);
   transition: all 0.4s;
@@ -41,7 +39,7 @@
   transform: rotate(90deg);
 }
 
-.navbar #toggle.active ~ .menu {
+.navbar #toggle.active ~ .menuList {
   opacity: 1;
   transform: translate(0%);
 }
@@ -52,9 +50,7 @@
   font-weight: 500;
   font-size: 2.5vh;
   line-height: 2.5vh;
-
   text-decoration: none;
-
   color: white;
 }
 
@@ -70,13 +66,54 @@
 
 @media (orientation: portrait) {
   .navbar {
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: fixed;
     padding: 0vh;
     top: 0vh;
     right: 0vw;
+    mix-blend-mode: normal;
+  }
+
+  .navbar #toggle {
+    position: absolute;
+    top: 4.5vh;
+    right: 2.5vh;
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .navbar .icon {
+    position: absolute;
+    top: 5.5vh;
+    right: 3.5vh;
+    height: 3vh;
+    width: 3vh;
+    fill: var(--black-background) !important;
+  }
+
+  .navbar .menuList {
+    position: absolute;
+  }
+
+  .navbar #toggle.active ~ .menuList {
+    transform: translate(-50%);
+  }
+
+  .navbar ul {
+    flex-direction: column;
     align-items: center;
-    z-index: 7012002;
-    background-color: red;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white-background);
+  }
+
+  .navbar li {
+    margin-top: 0vh;
+    margin-right: 0vh;
+  }
+
+  .navbar a {
+    color: var(--black-text);
   }
 }

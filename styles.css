@@ -11,6 +11,8 @@ body {
   --black-text: black;
   --black-background: black;
   --white-text: white;
+  --nav-landscape: white;
+
   --grey-stuff: rgb(243, 243, 243);
   --black-color: black;
   --white-color: white;
@@ -52,6 +54,8 @@ section {
   --black-text: white;
   --black-background: white;
   --white-text: black;
+  --nav-landscape: white;
+
   --grey-stuff: rgb(243, 243, 243);
   --black-color: white;
   --white-color: black;

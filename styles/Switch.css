@@ -45,6 +45,7 @@
 
 @media (orientation: portrait) {
   .switcher {
+    right: 9.3vw;
     transform: translate(0%, -80%);
   }
   .move {
