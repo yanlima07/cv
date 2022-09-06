@@ -56,15 +56,15 @@
   }
 
   .Homepage .texts {
-    right: 2vh;
-    bottom: 2vh;
+    right: 5vh;
+    bottom: 5vh;
     justify-content: center;
   }
 
   .Homepage h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 8.5vh;
+    font-size: 8vh;
     line-height: 9vh;
     letter-spacing: 0vh;
   }

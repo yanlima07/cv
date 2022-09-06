@@ -83,7 +83,7 @@
 
   .About .aboutTitle {
     padding-left: 0vh;
-    margin-top: 5vh;
+    margin-top: 5.5vh;
     background-color: var(--white-background);
   }
 
@@ -95,7 +95,7 @@
 
   .About .aboutContent {
     padding-left: 0vh;
-    margin-bottom: 6vh;
+    margin-bottom: 15vh;
     width: 85%;
   }
 
