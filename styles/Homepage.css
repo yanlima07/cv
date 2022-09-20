@@ -14,8 +14,8 @@
 }
 
 .Homepage img {
-  height: 85.5vh; /* MUDAR */
-  width: 50vh;
+  height: 100vh;
+  transform: translate(-21%, 1%);
 }
 
 .Homepage .texts {
@@ -52,7 +52,7 @@
 
 @media (orientation: portrait) {
   .Homepage img {
-    transform: translate(-55%, 5%);
+    transform: translate(-42%, 1%);
   }
 
   .Homepage .texts {
