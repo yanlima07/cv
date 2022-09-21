@@ -66,4 +66,8 @@ section {
   ::-webkit-scrollbar {
     display: none;
   }
+
+  .pages {
+    scroll-snap-type: y proximity;
+  }
 }

@@ -84,3 +84,38 @@
   margin-top: 80vh;
   mix-blend-mode: difference;
 }
+
+@media (orientation: portrait) {
+  .Experiences .title {
+    top: 5vh;
+    left: 5vh;
+  }
+
+  .Experiences h1 {
+    font-size: 4.5vh;
+    line-height: 7.1vh;
+    letter-spacing: 0.1vh;
+  }
+
+  .Experiences .Job h2 {
+    font-size: 13.5vh;
+    line-height: 11vh;
+  }
+
+  .Experiences p {
+    margin-top: 5vh;
+    font-size: 2vh;
+    line-height: 3.25vh;
+    width: 40vh;
+  }
+
+  .Experiences .arrow {
+    height: 5vh;
+    margin-top: 65vh;
+    mix-blend-mode: difference;
+  }
+
+  .Experiences .KG h2 {
+    text-align: center;
+  }
+}

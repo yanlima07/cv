@@ -346,3 +346,80 @@
   opacity: 0; /* GLOW */
   filter: blur(40px);
 }
+
+@media (orientation: portrait) {
+  .Stacks .title {
+    top: 6.1vh;
+    left: 5vh;
+  }
+
+  .Stacks h1 {
+    font-size: 4.5vh;
+    line-height: 5vh;
+    letter-spacing: 0.1vh;
+  }
+
+  .Stacks .Development {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 0vh;
+  }
+
+  .Stacks .blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 74vh;
+    margin-top: 8vh;
+    transform: translate(-1%, 0%);
+  }
+
+  .Stacks h2 {
+    font-size: 9vh;
+    line-height: 9vh;
+  }
+
+  .Stacks .square {
+    width: 17vh;
+    height: 17vh;
+    margin: 0vh 0vh 0vh 0vh;
+  }
+
+  #blockC:hover {
+    transform: none;
+  }
+
+  #blockJAVA:hover {
+    transform: none;
+  }
+
+  #blockJS:hover {
+    transform: none;
+  }
+
+  #blockHTML:hover {
+    transform: none;
+  }
+
+  #blockCSS:hover {
+    transform: none;
+  }
+
+  #blockMYSQL:hover {
+    transform: none;
+  }
+
+  .Stacks .texts {
+    display: none;
+  }
+
+  .Stacks .arrow {
+    top: 91.5vh;
+  }
+}

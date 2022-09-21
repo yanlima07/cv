@@ -57,7 +57,7 @@
 
   .Homepage .texts {
     right: 5vh;
-    bottom: 5vh;
+    bottom: 12vh;
     justify-content: center;
   }
 
@@ -66,7 +66,7 @@
     text-orientation: upright;
     font-size: 8vh;
     line-height: 9vh;
-    letter-spacing: 0vh;
+    letter-spacing: -1vh;
   }
 
   .Homepage h2 {
