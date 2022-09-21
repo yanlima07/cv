@@ -1,4 +1,6 @@
 .Experiences {
+  display: flex;
+  flex-direction: column;
   position: relative;
   height: 300vh;
   width: 100vw;
@@ -86,9 +88,14 @@
 }
 
 @media (orientation: portrait) {
+  .Experiences {
+    height: 100vh;
+    width: 100vw;
+  }
+
   .Experiences .title {
-    top: 5vh;
-    left: 5vh;
+    top: 2.1vh;
+    left: 3vh;
   }
 
   .Experiences h1 {
@@ -97,16 +104,36 @@
     letter-spacing: 0.1vh;
   }
 
+  .Experiences .Job {
+    position: relative;
+    height: auto;
+    margin-top: 2.25vh;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+
+  .Experiences .IC {
+    margin-top: 11vh;
+  }
+
   .Experiences .Job h2 {
-    font-size: 13.5vh;
-    line-height: 11vh;
+    font-size: 7.5vh;
+    line-height: 8vh;
+  }
+
+  .Experiences .IC h2 {
+    background-image: url(../img/code.webp);
+    background-position: 90%;
   }
 
   .Experiences p {
-    margin-top: 5vh;
-    font-size: 2vh;
-    line-height: 3.25vh;
-    width: 40vh;
+    margin-top: 0vh;
+    font-size: 1.5vh;
+    line-height: 2.25vh;
+    width: 70vw;
+    text-align: center;
+    overflow: visible;
   }
 
   .Experiences .arrow {

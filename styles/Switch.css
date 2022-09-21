@@ -45,10 +45,13 @@
 
 @media (orientation: portrait) {
   .switcher {
-    right: 9.3vw;
-    transform: translate(0%, -80%);
+    right: 10.5vw;
+    transform: translate(0%, -85%);
   }
   .move {
-    transform: translate(0%, -50%) !important;
+    transform: translate(0%, -60%) !important;
+  }
+  .switcher:hover {
+    transform: translate(0%, -85%);
   }
 }

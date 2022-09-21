@@ -76,16 +76,16 @@
 
   .navbar #toggle {
     position: absolute;
-    top: 6vh;
-    right: 5vh;
+    top: 3vh;
+    right: 3vh;
     width: 5vh;
     height: 5vh;
   }
 
   .navbar .icon {
     position: absolute;
-    top: 7vh;
-    right: 6vh;
+    top: 4vh;
+    right: 4vh;
     height: 3vh;
     width: 3vh;
     fill: var(--black-background) !important;
